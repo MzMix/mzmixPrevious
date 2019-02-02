@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #553D67;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header {
+  width: 100%;
+  background-color: #2F2FA2;
+  padding: 10px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.name {
+  width: 100%;
+  background-color: #F64C72;
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(246, 76, 113, 0.678);
+}
+
+.btn {
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+button {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 15px;
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+.footer {
+  width: 100%;
+  background-color: #2F2FA2;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
