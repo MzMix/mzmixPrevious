@@ -67,7 +67,7 @@ button {
   text-decoration: none;
   border: 2px solid black;
   border-radius: 7px;
-  margin: 15px;
+  margin: 25px !important;
 }
 
 button:hover,
