@@ -137,7 +137,7 @@ function selectBrick(val) {
 
 function createMenuBox() {
 
-    createMyBtn(5, '.pion', null, true);
+    createMyBtn(5, '.pion', null, true, 'G');
 
     for (let i = 0; i < 5; i++) {
         createMyBtn(i, '.pion', null, true);
