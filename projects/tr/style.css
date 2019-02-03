@@ -46,8 +46,14 @@ body {
   background-color: rgba(246, 76, 113, 0.678);
 }
 
+.reset {
+  width: 100%;
+  /* margin-bottom: 10px; */
+  padding: 5px;
+}
+
 .btn {
-  margin: 10px;
+  margin: 5px;
   box-sizing: border-box;
   display: inline-block;
   border: 1px solid black;
@@ -68,12 +74,12 @@ button {
   text-decoration: none;
   border: 2px solid black;
   border-radius: 7px;
-  margin: 25px !important;
 }
 
 button:hover,
 button:active {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .footer {
