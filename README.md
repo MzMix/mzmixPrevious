@@ -1,2 +1,2 @@
 # mzmix.github.io
-Strona główna projektu klockiem w matematykę
+Wolne i darmowe aplikacje webowe do pracy z klockami
