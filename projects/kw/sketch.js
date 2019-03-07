@@ -50,10 +50,13 @@ let segments = [],
 
 let bound = [2, 3, 4, 5, 31, 32, 33, 34, 35, 7, 13, 19, 25, 12, 18, 24, 30, 18];
 let skalar;
-let colors;
+let colors = ['white', 'khaki', 'deepskyblue', 'purple', 'greenyellow'];
+let mtmColors = ['white', 'khaki', 'deepskyblue', 'purple', 'greenyellow'];
+let crColors = ['white', 'red', 'yellow', 'blue', 'green'];
 let size;
 let n = 1,
     z;
+let sel;
 
 function resetBounds() {
     for (b of bd) {
@@ -64,6 +67,17 @@ function resetBounds() {
 function resetInside() {
     for (i of ins) {
         segments[i].num = 0;
+    }
+}
+
+function changeSet() {
+
+    let type = sel.value();
+
+    if (type == "MoreToMath") {
+        colors = mtmColors
+    } else if (type == "Zestaw Kreatywny") {
+        colors = crColors;
     }
 }
 
@@ -80,11 +94,17 @@ function createMenu() {
     skalar = createSlider(60, 140, 60, 10);
     select('.sld').child(skalar);
     skalar.changed(resize);
+
+    sel = createSelect();
+    sel.option('MoreToMath');
+    sel.option('Zestaw Kreatywny');
+    sel.changed(changeSet);
+    select('.list').child(sel);
+
 }
 
 function resize() {
     size = skalar.value();
-    print('done!');
     resizeCanvas(size * 6, size * 6)
 }
 
@@ -95,7 +115,6 @@ function setup() {
     let c = createCanvas(size * 6, size * 6);
     select('.box').child(c);
 
-    colors = [color(255, 255, 255), color(194, 178, 128), color(0, 127, 255), color(184, 3, 255), color(0, 255, 0)];
     for (let i = 0; i < 6; i++) {
 
         for (let j = 0; j < 6; j++) {
