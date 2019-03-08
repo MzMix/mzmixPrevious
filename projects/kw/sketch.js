@@ -74,9 +74,9 @@ function changeSet() {
 
     let type = sel.value();
 
-    if (type == "Zestaw 1") {
+    if (type == "MoreToMath") {
         colors = mtmColors
-    } else if (type == "Zestaw 2") {
+    } else if (type == "Zestaw Kreatywny") {
         colors = crColors;
     }
 }
@@ -96,16 +96,25 @@ function createMenu() {
     skalar.changed(resize);
 
     sel = createSelect();
-    sel.option('Zestaw 1');
-    sel.option('Zestaw 2');
+    sel.option('MoreToMath');
+    sel.option('Zestaw Kreatywny');
     sel.changed(changeSet);
     select('.list').child(sel);
+
+    save = createButton('Zapis planszy do pliku');
+    save.mouseClicked(saveImg);
+    select('.list').child(save);
 
 }
 
 function resize() {
     size = skalar.value();
     resizeCanvas(size * 6, size * 6)
+}
+
+function saveImg() {
+    let data = new Date();
+    saveCanvas(`wiezowce-${data.getHours()}-${data.getMinutes()}-${data.getSeconds()}`, 'png');
 }
 
 function setup() {
