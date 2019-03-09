@@ -12,8 +12,8 @@ function createUrl() {
     }
 
     // msg = `localhost:5500/?save=${msg}`;
-    // msg = `https://mzmix.github.io/projects/wuzk/?save=${msg}`;
-    msg = `${document.location.origin}/?save=${msg}`;
+    msg = `https://mzmix.github.io/projects/wuzk/?save=${msg}`;
+    // msg = `${document.location.origin}/?save=${msg}`;
 
     copyUrl(msg);
     print(msg);
