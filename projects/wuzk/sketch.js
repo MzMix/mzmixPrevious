@@ -215,7 +215,7 @@ class Gui {
         this.generateOption(this.createModalSection('list'), "textFill", "Zmiana opisu pól", 'list', "Zmiana opisu", this.changeTxt, undefined, ['Numeracja', 'Adresowanie', 'Tabliczka mnożenia', 'Brak opisów']);
         this.generateOption(this.createModalSection('set'), "setSwitch", "Zmiana zestawu", 'list', "Zmiana zestawu", this.changeSet, undefined, ['Zestaw 1', 'Zestaw 2']);
         this.generateOption(this.createModalSection('reset'), "resetBtn", "Reset planszy:", 'button', "Reset", this.reset);
-        this.generateOption(this.createModalSection('saveImg'), "saveImgBtn", "Zapis planszy do pliku png:", 'button', "Zapisz", this.saveImg);
+        this.generateOption(this.createModalSection('saveImg'), "saveImgBtn", "Zapis planszy do pliku:", 'button', "Zapisz", this.saveImg);
         //this.generateOption(this.createModalSection('saveUrl'), "saveUrlBtn", "Generowanie linku z zapisem planszy:", 'button', "Generuj", createUrl);
 
         return this;
