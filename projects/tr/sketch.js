@@ -272,7 +272,7 @@ function setup() {
         }
     }
 
-    save = createButton('Zapis do pliku');
+    save = createButton('Zapis planszy do pliku');
     save.attribute('onclick', 'saveImg()');
     select('.reset').child(save);
 
