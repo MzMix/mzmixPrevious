@@ -38,7 +38,7 @@ body {
 .palette,
 .options {
 	width: 170px;
-	height: 390px;
+	max-height: 390px;
 	box-sizing: border-box;
 	margin: 0px 15px;
 	display: inline-block;
