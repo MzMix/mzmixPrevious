@@ -19,7 +19,7 @@ class Segment {
         this.stroke = color(255, 255, 255, 125);
         this.textColor = color(255, 255, 255);
         this.number = number;
-        this.txt = this.number;
+        this.txt = '';
     }
 
     display() {
@@ -212,7 +212,7 @@ class Gui {
             Global.modalOpened = true;
         });
 
-        this.generateOption(this.createModalSection('list'), "textFill", "Zmiana opisu pól", 'list', "Zmiana opisu", this.changeTxt, undefined, ['Numeracja', 'Adresowanie', 'Tabliczka mnożenia', 'Brak opisów']);
+        this.generateOption(this.createModalSection('list'), "textFill", "Zmiana opisu pól", 'list', "Zmiana opisu", this.changeTxt, undefined, ['Brak opisów', 'Numeracja', 'Adresowanie', 'Tabliczka mnożenia', ]);
         this.generateOption(this.createModalSection('set'), "setSwitch", "Zmiana zestawu", 'list', "Zmiana zestawu", this.changeSet, undefined, ['Zestaw 1', 'Zestaw 2']);
         this.generateOption(this.createModalSection('reset'), "resetBtn", "Reset planszy:", 'button', "Reset", this.reset);
         this.generateOption(this.createModalSection('saveImg'), "saveImgBtn", "Zapis planszy do pliku:", 'button', "Zapisz", this.saveImg);

@@ -37,14 +37,14 @@ body {
 
 .palette,
 .options {
-	max-width: 170px;
-	max-height: 390px;
+	width: 170px;
+	height: 390px;
+	box-sizing: border-box;
 	margin: 0px 15px;
 	display: inline-block;
 	vertical-align: top;
-	box-sizing: border-box;
 	background-color: rgba(246, 76, 113, 0.589);
-	border-radius: 20%;
+	border-radius: 5%;
 }
 
 .paletteBtn {
@@ -52,12 +52,11 @@ body {
 	height: 50px;
 	box-sizing: border-box;
 	display: inline-block;
-	padding: 5px;
+	padding: 10% 0;
 	margin: 5px;
-	border-radius: 100%;
+	font-weight: bold;
 	color: black;
 	text-align: center;
-	padding-top: 14px;
 }
 
 .paletteBtn:hover {
