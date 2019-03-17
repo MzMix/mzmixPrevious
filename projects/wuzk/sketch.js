@@ -212,7 +212,7 @@ class Gui {
             Global.modalOpened = true;
         });
 
-        this.generateOption(this.createModalSection('fullScreen'), "fullScreenBtn", "Przełączanie pełnego ekranu:", 'button', "Pełny ekran", this.hideElements);
+        // this.generateOption(this.createModalSection('fullScreen'), "fullScreenBtn", "Przełączanie pełnego ekranu:", 'button', "Pełny ekran", this.hideElements);
         this.generateOption(this.createModalSection('list'), "textFill", "Zmiana opisu pól", 'list', "Zmiana opisu", this.changeTxt, undefined, ['Brak opisów', 'Numeracja', 'Adresowanie', 'Tabliczka mnożenia', ]);
         this.generateOption(this.createModalSection('set'), "setSwitch", "Zmiana zestawu", 'list', "Zmiana zestawu", this.changeSet, undefined, ['Zestaw 1', 'Zestaw 2']);
         this.generateOption(this.createModalSection('reset'), "resetBtn", "Reset planszy:", 'button', "Reset", this.reset);
