@@ -38,13 +38,17 @@ body {
 .palette,
 .options {
 	width: 170px;
-	max-height: 390px;
+	max-height: 420px;
 	box-sizing: border-box;
 	margin: 0px 15px;
 	display: inline-block;
 	vertical-align: top;
 	background-color: rgba(246, 76, 113, 0.589);
 	border-radius: 5%;
+}
+
+.palette {
+	padding: 20px 0;
 }
 
 .paletteBtn {
@@ -66,7 +70,7 @@ body {
 
 .spacer {
 	padding: 10px;
-	margin: 10px 0;
+	margin: 10px;
 	border-top: 1px dashed #efefef;
 	border-bottom: 1px dashed #efefef;
 }
