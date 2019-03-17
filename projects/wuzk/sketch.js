@@ -234,10 +234,6 @@ class Gui {
 
             let div = createDiv();
 
-            if (col == '#C0C0C0') {
-                div.html('G');
-            }
-
             div.addClass('paletteBtn');
             div.style('background-color', col);
             div.attribute("onclick", `pick('${col}')`);
