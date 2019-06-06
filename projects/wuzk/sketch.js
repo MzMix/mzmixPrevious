@@ -396,6 +396,28 @@ class Gui {
             i++;
         }
 
+        for (let s of Global.segments) {
+            if (s instanceof Index) {
+                if (s.iJ.i.between(0, 11)) {
+
+                    if (!(s.fill == '#F64C72' && s.stroke == 'pink')) {
+                        s.fill = Global.colors[abs(s.iJ.i - 1)];
+                        s.stroke = color(0, 0, 0, 0);
+                        s.textColor = color(0, 0, 0, 0);
+                    }
+
+                } else if (s.iJ.j.between(0, 11)) {
+                    if (!(s.fill == '#F64C72' && s.stroke == 'pink')) {
+                        s.fill = Global.colors[abs(s.iJ.j - 1)];
+                        s.stroke = color(0, 0, 0, 0);
+                        s.textColor = color(0, 0, 0, 0);
+                    }
+                }
+
+
+            }
+        }
+
     }
 
     loadBoard() {
