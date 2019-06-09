@@ -18,7 +18,7 @@ function insertData() {
 	let footer = `Wersja: ${ver} z dnia: ${date}`
 
 	select('.header').html(title);
-	select('title').html(title);
+	select('title').html(name);
 	select('.name').html(name);
 	select('.footer').html(footer);
 }
